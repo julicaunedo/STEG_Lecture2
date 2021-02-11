@@ -60,7 +60,7 @@ replace cgdpo=(1-natural_res/100)*cgdpo
 g output_per_worker=ln(rgdpo/(emp*avh))
 
 g output_per_worker_PPPc=ln(cgdpo/(emp))
-g output_per_worker_XRc=ln(cgdpo/pl_gdpo/(emp))
+g output_per_worker_XRc=ln(cgdpo*pl_gdpo/(emp))
 
 g capital_output_ratio=ln(cn/cgdpo)*`alpha'/(1-`alpha')
 
